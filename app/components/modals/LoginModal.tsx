@@ -137,5 +137,3 @@ const LoginModal = (props: Props) => {
 };
 
 export default LoginModal;
-
-// 2:18:32
