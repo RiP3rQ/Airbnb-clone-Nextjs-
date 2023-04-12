@@ -57,6 +57,11 @@ const LoginModal = (props: Props) => {
     });
   };
 
+  const onToggle = useCallback(() => {
+    loginModal.onClose();
+    registerModal.onOpen();
+  }, [loginModal, registerModal]);
+
   const bodyContent = (
     <div className="flex flex-col gap-4">
       <Heading title="Welcome back" subtitle="Login to your account!" />
@@ -102,7 +107,7 @@ const LoginModal = (props: Props) => {
         <p>
           First time using Airbnb?
           <span
-            onClick={loginModal.onClose}
+            onClick={onToggle}
             className="
               text-neutral-800
               cursor-pointer 
