@@ -5,6 +5,7 @@ import { SafeUser } from "@/app/types";
 
 import ClientOnly from "./ClientOnly";
 import { FC } from "react";
+import useFavorite from "../hooks/useFavourite";
 
 type Props = {
   listingId: string;
@@ -12,8 +13,10 @@ type Props = {
 };
 
 const HeartButton: FC<Props> = ({ listingId, currentUser }) => {
-  const hasFavorited = false;
-  const toggleFavorite = () => {};
+  const { hasFavorited, toggleFavorite } = useFavorite({
+    listingId,
+    currentUser,
+  });
 
   return (
     <div
