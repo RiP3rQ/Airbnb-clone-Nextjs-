@@ -1,6 +1,12 @@
 
 # Airbnb Clone 👾
 
+# App based on the tutorial off CodeWithAntonio
+
+Youtube: https://www.youtube.com/@codewithantonio
+
+Tutorial: https://youtu.be/c_-b_isI4vg?si=ZF-21LmGQdwqfRl2
+
 ## Tech stack
 
 - **React**
